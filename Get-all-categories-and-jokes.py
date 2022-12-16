@@ -51,8 +51,8 @@ class Joke_tests():
             else:
                 print("Провал!!! Запрос ошибочный")
             result2.encoding = "utf-8"
-            print(result2.text)
             check = result2.json()
+            print(result2.text)
             check_info = check.get("categories")
             assert check_info == [i]
             print("Категория верна")
